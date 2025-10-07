@@ -1,0 +1,48 @@
+# Disc: FASTA file processing
+cd ../CMEECourseWork/week1/code
+
+
+#1 Count how many lines there are in each file
+
+find ../data -name "*.fasta" -exec wc -l {} +
+
+#find ../data -name "*.fasta"
+# Call each FASTA file
+
+#-exec wc -l {} +
+# Count the number of lines for each file
+
+
+#2 Print everything starting from the second line for the E. coli genome
+
+tail -n+2 ../data/E.coli.fasta 
+
+
+#3 Count the sequence length of this genome
+
+tail -n+2 ../data/E.coli.fasta | wc -m
+# Remove the first line, which is not sequence,
+# then pipe to count the character number 
+
+
+#4 Count the matches of “ATGC” in the genome of E. coli
+
+grep -o ATCG ../data/E.coli.fasta | wc -l 
+
+# grep -o
+# Match "ATCG" and print the matches only
+
+# wc -l
+# Count the lines printed, each match a line
+
+
+#5 Compute the AT/GC ratio. 
+
+a=$(tail -n+2 ../data/E.coli.fasta | grep -o A | wc -l)
+t=$(tail -n+2 ../data/E.coli.fasta | grep -o T | wc -l)
+c=$(tail -n+2 ../data/E.coli.fasta | grep -o C | wc -l)
+g=$(tail -n+2 ../data/E.coli.fasta | grep -o G | wc -l)
+# Capture the count of each base into a variable
+
+echo $((($a+$t)*100/($g+$c)))
+# Do math and present as a percentage
