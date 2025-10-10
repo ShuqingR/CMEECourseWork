@@ -1,0 +1,24 @@
+# Author: Shuqing Ren
+# Desc: Bash command challenge - practical in UNIX chapter of MulQuaBio
+# Date: 2026 Oct 7
+
+# Original code
+find . -type f -exec ls -s {} \; | sort -n | head -10
+
+## 1. Modified code (size formating)
+find . -type f -exec ls -s --block-size=1 {} \; | sort -n | head -10
+
+# To print file size in human readable format: 
+# --block-size=1, transforms the unit of file size from
+# block number (returned by ls -s) to bytes.
+
+## 2. Modified code (faster processing)
+find . -type f -exec ls -s --block-size=1 {} + | sort -n | head -10
+
+# To increase processing spead:
+# use + instead of \; to group filenames together
+# then run the ls command with all grouped files just once,
+# instead of run ls once for each file.
+
+## 3. Modified code? (another faster processing)
+find . -type f -exec ls -s --block-size=1 {} + | sort -n | head -10
