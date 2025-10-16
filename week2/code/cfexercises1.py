@@ -58,6 +58,7 @@ def main(argv):
     print(foo_2())
     print(foo_3())
     print(foo_4())
+    print(f"The factorial of 6 is {foo_5()}.")
     print(foo_6())
     return 0
 
