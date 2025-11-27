@@ -15,5 +15,30 @@ class(ats)
 head(ats)
 plot(ats)
 
-# corelation coefficient
+# corelation coefficient (temp ~ year)
+cor_observed <- cor(ats$Year, ats$Temp, method = "pearson")
+cor_observed
 
+# calculate approximate p-value
+temp <- ats$Temp    # seperate variables
+year <- ats$Year
+permutation <- 10000    # set objects for permutation analysis
+cor_permuted <- rep(NA, permutation)
+
+for (i in 1:permutation) {
+    # random shuffle of variables
+    temp_random <- sample(temp, replace = FALSE)
+    year_random <- sample(year, replace = FALSE)
+    # correlation coefficient of random pairs
+    cor_permuted[i] <- cor(year_random, temp_random, method = "pearson")
+}
+cor_permuted
+
+# finally, the approximate p-value
+app_p <- sum(cor_permuted > cor_observed) / permutation
+app_p
+
+# visualisation & save image 
+pdf("../results/FloridaFig.pdf", width = 6, height = 4)  # open a pdf device (size in inches)
+plot(year, temp, xlab = "Years", ylab = "Temperature")
+dev.off()
