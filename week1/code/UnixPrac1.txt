@@ -1,6 +1,4 @@
 # Discription: FASTA file processing
-# Directory: ../CMEECourseWork/week1/code
-
 
 #1 Count how many lines there are in each file
 
