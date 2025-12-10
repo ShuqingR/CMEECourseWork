@@ -17,11 +17,14 @@ hist(popn)
 # execution
 # lapply(1:15, function(i) doit(popn))  # likely stop at a point
 result <- lapply(1:15, function(i) try(doit(popn), FALSE))
-# The FALSE modifier for the try command suppresses any error messages, 
+# ?The FALSE modifier for the try command suppresses any error messages, 
 # but result will still contain them so that you can inspect them later
+# By default, silent = FALSE, error messages are printed, 
+# and the argument TRUE can be used to suppress them. 
 
 # running results & errors stored in the object "result"
 class(result)
+result
 
 # another manual way of storing of results
 result <- vector("list", 15) #Preallocate/Initialize
