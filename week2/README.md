@@ -1,20 +1,7 @@
 # Week 2 – Python
 
 Python fundamentals for ecological computing.
-All codes and data from week1 are breifly explained below.
-
-## 1/4:  
-lc1.py; lc2.py; dictionary.py; tuple.py (list comprehension)
-
-## 2/4:  
-cfexercises1.py (flow control)
-
-## 3/4:  
-align_seqs.py (program)
-
-## 4/4:  
-oaks_debugme.py (debug)
-
+Codes from week2 are breifly explained below.
 
 ## Folder Structure
 
@@ -74,9 +61,9 @@ week2
 - sequence alignment workflow  
 2. `basic_io1.py`, `basic_io2.py`, `basic_io3.py`, `basic_csv.py`  
 - Read and write files
-3. `dictionary.py`, `loops.py`, `tuple.py`  
+3. `loops.py` 
 - data structure
-4. `lc1.py`, `lc2.py`
+4. `lc1.py`, `lc2.py`, `dictionary.py`, `tuple.py` 
 - list comprehension
 5. `oaks.py`, `oaks_debugme.py` 
 - filtering and debugging  

@@ -1,7 +1,7 @@
 # Week 1 – UNIX & Shell Scripting
 
 UNIX command line operation & shell scripting.  
-All codes and data from week1 are breifly explained below.
+Codes from week1 are breifly explained below.
 
 ## Folder Structure
 

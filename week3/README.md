@@ -1,7 +1,7 @@
 # Week 3 – R
 
 R programming fundamentals for modelling, data wrangling, analysis, and visualisation.
-Codes and data from week3 are breifly explained below.
+Codes from week3 are breifly explained below.
 
 ## Project Structure
 
