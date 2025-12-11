@@ -24,8 +24,11 @@ a_function()
 
 print("After calling a_function, outside the function, the value of _a_global is (still)", _a_global)
 print("After calling a_function, outside the function, the value of _b_global is (still)", _b_global)
-print("After calling a_function, outside the function, the value of _a_local is ", _a_local)
-
+# avoid error for _a_local printing
+try:
+    print("After calling a_function, outside the function, the value of _a_local is", _a_local)
+except NameError:
+    print("_a_local does not exist outside the function.")
 
 ## global variable & function
 _a_global = 10
