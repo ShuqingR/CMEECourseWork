@@ -3,14 +3,22 @@
 myenv
 __pycache__
 .ipynb_checkpoints
+*.aux   
+*.log
+.RData
+.Rhistory
 
 # Personal notes #
 ##################
-CopyBackup
 Notes*
 *Rubric.html
 
 # Others #
 ##########
-# sandbox # double check
+# sandbox # uploaded for some in-class code output to here
 *.tmp
+results/* 
+
+# Keep #
+########
+!results/.gitkeep
