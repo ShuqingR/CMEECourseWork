@@ -63,7 +63,7 @@ CMEECoursework/
 
 ---
 
-### Week 3 — R
+### Week 3 — R & data handling
 - Learned and practiced basic R.
 - Applications included: data wrangling, visualisation, and simple statistic analysis.
 - Coursework scripts include: `TreeHeight.R`, `Florida.R`, `PP_Regress.R`
