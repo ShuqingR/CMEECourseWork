@@ -24,6 +24,13 @@ echo
 echo 'Enter two numbers separated by space(s)'
 read a b
 echo
+
+# check input validity
+if [ -z "$a" ] || [ -z "$b" ]; then
+    echo -e "Please try again and enter two numbers."
+    exit 1
+fi
+
 echo 'you entered' $a 'and' $b '; Their sum is:'
 
 ## Assigned Variables; Command substitution

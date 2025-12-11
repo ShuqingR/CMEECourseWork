@@ -1,11 +1,11 @@
 # My CMEE Coursework Repository
 
-This repository contains my coursework and in-class scripts developed during the "Bootcamp" of MRes programme *Computational Methods in Ecology and Evolution* (CMEE) at Imperial College London, Silwood Park. The major guidance for this coursework canbe found [here](https://mulquabio.github.io/MQB/intro.html)  
+This repository contains my coursework and in-class scripts developed during the "Bootcamp" of MRes programme *Computational Methods in Ecology and Evolution* (CMEE) at Imperial College London, Silwood Park. The major guidance for this coursework can be found from [MulQuaBio](https://mulquabio.github.io/MQB/intro.html).  
 
 Topics covered:  
 - Unix/Linux; shell; Python; R; Jupytor Notebook; Latex
 - Version control; group work
-- data management & visualisation
+- Data management & visualisation
 
 ---
 
@@ -23,7 +23,7 @@ CMEECoursework/
 |
 ├── week2/
 │   ├── code/
-│   ├── data/ 
+│   ├── data/
 │   ├── results/
 │   ├── sandbox/ 
 │   └── README.md
