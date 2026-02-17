@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Bootcamp_Assessment_ShuqingRen_sr1822</title>
+  <style>
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Bootcamp_Assessment_ShuqingRen_sr1822</h1>
+</header>
+<h1 id="bootcamp-assessment-shuqing-ren">Bootcamp Assessment: Shuqing
+Ren</h1>
+<p><strong>Expected scripts:</strong></p>
+<p>Missing <strong>17</strong> expected scripts total: - Missing taught
+(15): <code>blackbirds.py</code>, <code>myscript.py</code>,
+<code>re4.py</code>, <code>regexs.py</code>, <code>run_fmr_r.py</code>,
+<code>timeitme.py</code>, <code>using_os.py</code>,
+<code>Vectorize1.py</code>, <code>vectorize2.py</code>,
+<code>control.R</code>, <code>fmr.R</code>, <code>ricker.R</code>,
+<code>SQLinR.R</code>, <code>vectorize2.R</code>,
+<code>tiff2_png.sh</code>. - Missing assigned (2):
+<code>PP_Dists.R</code>, <code>run_get_TreeHeight.sh</code>.</p>
+<h2 id="execution-results">Execution results</h2>
+<p><strong>Overall:</strong> - Majority of scripts executed successfully
+in the automated headless environment. - Failures appear attributable to
+either (i) <strong>missing input data in expected location</strong>
+(<code>basic_io1.py</code>) or (ii)
+<strong>interactive/argument-dependent scripts</strong>
+(<code>variables.sh</code>, <code>CompileLaTex.sh</code>) — these are
+treated as <strong>present but not validated</strong> for functional
+purposes.</p>
+<hr />
+<h2 id="script-specific-feedback">Script-Specific Feedback</h2>
+<blockquote>
+<p>Representative scripts chosen to cover: strong examples, assigned
+scripts, execution issues, and common style/robustness problems.</p>
+</blockquote>
+<h3 id="basic_io1.py">basic_io1.py</h3>
+<p>Status: Present, <strong>not validated</strong> (missing input)</p>
+<p>Evidence (from LOG): - Exit code: 1 - Missing from expected list: No
+(expected taught script) - Tool warnings: Missing input file - Output
+validation: N/A</p>
+<p>Rubric relevance: - Criterion 2 (functional correctness) - Criterion
+8 (input validation / robustness) - Criterion 9 (method
+implementation)</p>
+<ul>
+<li>Script logic is correct for demonstrating file input, but depends on
+<code>../sandbox/test.txt</code>, which was not present in the
+repository location expected by the script.</li>
+</ul>
+<p>Improvement suggestion: - Either include
+<code>sandbox/test.txt</code> (if permitted) or modify the script to
+create a small example file when missing (or accept a path argument via
+<code>sys.argv</code>).</p>
+<hr />
+<h3 id="variables.sh">variables.sh</h3>
+<p>Status: Present, <strong>present-but-not-validated</strong>
+(interactive)</p>
+<p>Evidence (from LOG): - Exit code: 1 - Missing from expected list: No
+(expected taught script) - Tool warnings: None - Output validation:
+N/A</p>
+<ul>
+<li>The failure is consistent with non-interactive automated execution:
+the script prompts for input (<code>read</code>) and then fails the
+validity check when no input is supplied. This is acceptable at bootcamp
+level unless explicitly forbidden.</li>
+</ul>
+<p>Improvement suggestion: - Add a non-interactive mode: accept inputs
+as command-line args (with defaults), or guard interactive prompts
+behind an <code>if [ -t 0 ]</code> check.</p>
+<hr />
+<h3 id="compilelatex.sh">CompileLaTex.sh</h3>
+<p>Status: Present, <strong>present-but-not-validated</strong> (requires
+arguments; also uses GUI <code>evince</code>)</p>
+<p>Evidence (from LOG): - Exit code: 1 - Missing from expected list: No
+(expected taught script) - Tool warnings: None in LOG - Output
+validation: N/A</p>
+<ul>
+<li>Script exits early with a helpful usage message because no filename
+argument was provided by the automated runner. It also attempts to open
+a PDF viewer (<code>evince</code>), which will not work in headless
+environments.</li>
+</ul>
+<p>Improvement suggestion: - Accept <code>filename.tex</code> directly
+(or check for <code>.tex</code> suffix), remove GUI calls, and return a
+non-error exit when printing usage (or document required CLI usage
+clearly).</p>
+<hr />
+<h3 id="csvtospace.sh">csvtospace.sh</h3>
+<p>Status: Present, executed successfully</p>
+<p>Evidence (from LOG): - Exit code: 0 - Missing from expected list: No
+(expected taught script) - Tool warnings: None shown - Output
+validation: Expected <code>*_space.txt</code> <strong>not found</strong>
+(global outputs check)</p>
+<p>Rubric relevance: - Criterion 2 - Criterion 8</p>
+<ul>
+<li>Script runs, but the expected output artifact was not detected in
+the repository at assessment time.</li>
+</ul>
+<p>Improvement suggestion: - Ensure the script writes outputs to the
+expected location/name pattern (and/or commit only the <em>recipe</em>
+and regenerate outputs on demand if policy discourages committing
+results).</p>
+<hr />
+<h3 id="datawrang.r">DataWrang.R</h3>
+<p>Status: Present (taught script), execution outcome not highlighted as
+failing in LOG</p>
+<p>Evidence (from LOG): - Exit code: Not flagged among failures (no
+non-zero exit reported)</p>
+<p>Rubric relevance: - Criterion 2 - Criterion 3 - Criterion 9</p>
+<ul>
+<li>Presence plus the broader pattern of successful R execution suggests
+functional engagement with core R workflow and data manipulation.</li>
+</ul>
+<p>Improvement suggestion: - Where possible, factor repeated wrangling
+steps into small functions and include brief comments describing the
+intent of each transformation.</p>
+<hr />
+<h3 id="florida.r">Florida.R</h3>
+<p>Status: Present; reporting outputs present</p>
+<p>Evidence (from LOG): - Additional files detected:
+<code>week3/code/FloridaFig.pdf</code>,
+<code>week3/code/FloridaResults.pdf</code>,
+<code>week3/code/FloridaResults.tex</code></p>
+<p>Rubric relevance: - Criterion 10 (reporting) - Criterion 4
+(documentation)</p>
+<p>Improvement suggestion: - Prefer placing final PDFs in
+<code>results/</code> (or generate them via a script), and keep
+<code>code/</code> focused on source.</p>
+<hr />
+<h3 id="pp_regress_loc.r-groupwork">PP_Regress_loc.R (groupwork)</h3>
+<p>Status: Present, executed successfully (groupwork)</p>
+<p>Evidence (from LOG): - Exit code: 0</p>
+<p>Rubric relevance: - Criterion 2 - Criterion 9</p>
+<ul>
+<li>Script runs successfully in the automated environment, supporting
+groupwork functional completeness.</li>
+</ul>
+<p>Improvement suggestion: - Add lightweight checks for required
+columns/inputs and ensure outputs are written with clear names into
+<code>results/</code>.</p>
+<hr />
+<h3 id="tautocorr.r">TAutoCorr.R</h3>
+<p>Status: Present, executed successfully (groupwork); see detailed
+evaluation below</p>
+<p>Evidence (from LOG): - Exit code: 0 - Stdout includes: - Observed
+successive-year correlation (reported) - Permutation p-value (reported)
+- Writes figure to <code>../results/Fig1.pdf</code></p>
+<p>Rubric relevance: - Criterion 2 - Criterion 3 - Criterion 8 -
+Criterion 9 - Criterion 10 - Criterion 11</p>
+<ul>
+<li>Meets the core computational aim and runs cleanly in a headless
+environment.</li>
+</ul>
+<p>Improvement suggestion: - See “Detailed Evaluation: TAutoCorr.R” for
+spec-level refinements (especially p-value definition and
+output/reporting expectations).</p>
+<h2 id="detailed-evaluation-of-tautocorr.r">Detailed Evaluation of
+TAutoCorr.R</h2>
+<h3 id="a.-specification-alignment">A. Specification Alignment</h3>
+<p><strong>Metadata requirements (summary):</strong> - Must run
+non-interactively and use relative paths ✅ - Must compute
+successive-year pairs (Temp[t] vs Temp[t+1]) and observed correlation ✅
+- Must perform permutation analysis by shuffling the temperature series
+and recomputing correlation ✅ - Must compute and report
+permutation-based p-value (not <code>cor.test()</code> p-value) ✅</p>
+<p><strong>Observed implementation (from LOG contents):</strong> - Loads
+<code>../data/KeyWestAnnualMeanTemperature.RData</code> using a relative
+path and checks file existence ✅ - Constructs successive-year vectors:
+- <code>year_i &lt;- temps[1:(n_years-1)]</code> -
+<code>year_j &lt;- temps[2:n_years]</code> ✅ - Computes observed
+Pearson correlation via <code>cor()</code> ✅ - Runs permutation loop
+(<code>permutations &lt;- 10000</code>,
+<code>sample(temps, replace=FALSE)</code>) and stores permuted
+correlations ✅ - Computes permutation p-value as
+<code>sum(permuted_cors &gt; actual_cor) / permutations</code> ✅
+(one-tailed form; see notes below) - Produces a PDF plot to
+<code>../results/Fig1.pdf</code> ✅ (optional in metadata)</p>
+<h3 id="b.-conceptual-understanding-of-autocorrelation">B. Conceptual
+Understanding of Autocorrelation</h3>
+<ul>
+<li>Correctly targets <strong>lag-1</strong> dependence (successive-year
+relationship) by correlating adjacent-year pairs ✅</li>
+<li>Uses a <strong>permutation null</strong> that destroys temporal
+order, appropriate for testing whether adjacent-year correlation exceeds
+chance under exchangeability assumptions ✅</li>
+<li>Reports both the observed statistic and permutation-based p-value
+✅</li>
+</ul>
+<p><strong>Conceptual verdict:</strong> Clear understanding
+demonstrated.</p>
+<h3 id="c.-algorithmic-implementation-depth">C. Algorithmic
+Implementation Depth</h3>
+<p>Compared to expectations: - Indexing for adjacent pairs is correct
+and explicit ✅ - Permutation loop is clear and readable ✅ - Uses
+<code>set.seed(1)</code> for reproducibility ✅ - Storage uses
+<code>permuted_cors &lt;- matrix()</code> then assigns
+<code>permuted_cors[i] &lt;- ...</code> (works, but a preallocated
+numeric vector would be clearer and slightly more efficient) ⚠</p>
+<p><strong>Improvement suggestion:</strong> - Preallocate:
+<code>permuted_cors &lt;- numeric(permutations)</code>.</p>
+<h3 id="d.-statistical-computational-rigor">D. Statistical &amp;
+Computational Rigor</h3>
+<ul>
+<li>Uses <code>cor(..., method="pearson")</code> consistently ✅</li>
+<li>Permutation p-value currently computed as
+<strong>one-tailed</strong> <code>P(r_perm &gt; r_obs)</code> ✅</li>
+</ul>
+<p><strong>Refinement to consider:</strong> - If the question is
+“significantly correlated” without specifying direction, a
+<strong>two-tailed</strong> permutation p-value is often preferable: -
+<code>mean(abs(permuted_cors) &gt;= abs(actual_cor))</code></p>
+<h3 id="e.-error-handling-robustness-criterion-8">E. Error Handling
+&amp; Robustness (Criterion 8)</h3>
+<ul>
+<li>Checks file existence and warns on extension mismatch ✅</li>
+<li>Does not explicitly handle:
+<ul>
+<li>Very short series (<code>n_years &lt; 3</code>)</li>
+<li><code>NA</code> values in <code>ats$Temp</code> (could pass
+<code>use="complete.obs"</code> to <code>cor()</code>) ⚠</li>
+</ul></li>
+</ul>
+<h3 id="f.-comparison-with-example-solution">F. Comparison with Example
+Solution</h3>
+<h3 id="comparison-with-example-solution">Comparison with Example
+Solution</h3>
+<p><strong>Similarities</strong> - Computes lag-1 (successive-year)
+correlation using adjacent pairs. - Implements a permutation test by
+shuffling the temperature sequence and recomputing the statistic. -
+Reports observed correlation and permutation-derived p-value.</p>
+<p><strong>Key omissions (relative to typical robust solutions)</strong>
+- No explicit two-tailed option or clear justification of tail choice. -
+No explicit NA handling / short-series guard.</p>
+<p><strong>Conceptual gaps</strong> - None evident; core statistical
+idea is implemented correctly.</p>
+<p><strong>Improvements beyond example (if any)</strong> - Adds a file
+existence check and writes a quick diagnostic plot to PDF, which is
+helpful for communication.</p>
+<h2 id="overall-feedback">Overall feedback</h2>
+<p><strong>What’s working well</strong> - Strong documentation footprint
+(main README + per-week READMEs) and good commenting in R and shell
+scripts. - Clear evidence of learning-by-doing across weeks, with many
+scripts executing successfully in a clean environment. -
+<code>TAutoCorr.R</code> shows good statistical reasoning: correct lag
+handling, correct use of permutation-based inference, and
+reproducibility.</p>
+<p><strong>High-impact improvements</strong> - <strong>Reproducibility /
+outputs discipline:</strong> avoid committing large numbers of generated
+outputs into <code>results/</code> (or generate them via scripts and
+keep <code>results/</code> clean/ephemeral). - <strong>Input
+robustness:</strong> where scripts rely on small example files
+(e.g. <code>basic_io1.py</code>), ensure those inputs exist, or make the
+script accept a path argument / generate a minimal example. -
+<strong>Non-interactive friendliness:</strong> add CLI argument support
+(or defaults) for interactive scripts (<code>variables.sh</code>, LaTeX
+compilation helper). - <strong>Python documentation:</strong> docstring
+coverage is low; adding short docstrings to key functions/modules would
+elevate Criterion 3 further.</p>
+<hr />
+<h2 id="priority-fixes">Priority fixes</h2>
+<ol type="1">
+<li><strong>Address missing assigned scripts:</strong>
+<code>PP_Dists.R</code>, <code>run_get_TreeHeight.sh</code> (or document
+clearly if intentionally not attempted).</li>
+<li><strong>Fix missing input for <code>basic_io1.py</code>:</strong>
+provide <code>../sandbox/test.txt</code> or accept a filename
+argument.</li>
+<li><strong>Make interactive scripts non-interactive-friendly:</strong>
+add CLI args/defaults; avoid GUI calls (<code>evince</code>) in
+automated workflows.</li>
+<li><strong>Results hygiene:</strong> avoid committing bulky generated
+outputs into <code>results/</code>; generate via scripts and/or ensure
+<code>results/</code> is empty as expected.</li>
+</ol>
+<h2 id="summary">Summary</h2>
+<p>Your submission shows strong engagement under bootcamp constraints:
+clear repository structure across weeks, excellent documentation
+coverage, and robust implementation of the core statistical task in
+<code>TAutoCorr.R</code> (correct lag handling + permutation inference +
+reproducibility). The issues were some missing expected scripts/outputs,
+a missing toy input file for a taught IO example, and repository hygiene
+around committed <code>results/</code> outputs.</p>
+<h2 id="mark-classification">Mark classification</h2>
+<!-- Total Mark: 74/100   -->
+<p>Classification: Distinction</p>
+</body>
+</html>
